@@ -10,7 +10,10 @@
             <h2>{{question}}</h2>
             <h1>{{answer}}</h1>
         </div>
-    </div>            
+    </div> <!-- Fin indecision-container -->           
+    <div>
+        <h2>Desarrollado Por: Samir Vergara V</h2>
+    </div>
 </div>    
 </template>
 
