@@ -1,16 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>APP Indesicion</h1>    
+    <Indecision />
+    <img alt="Vue logo" id="img" src="./assets/logo.png">
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Indecision from './components/Indecision.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  components: { Indecision }
 }
 </script>
 
@@ -22,5 +24,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#img{
+  width: 60px;
+  height: 60px;
+  align-items: center;
 }
 </style>
