@@ -1,10 +1,13 @@
-<template lang="es">
-    <div>
-        <h2>{{customTitle}}</h2>
-        <p>{{count}}<sup>2</sup> = {{squareCounter}}</p>
+<template>
+<div>
+    <h2>{{customTitle}}</h2>
+    <p>{{count}}<sup>2</sup> = {{squareCounter}}</p> 
+    <p data-test-id="counter">{{count}}</p>
+    <div class="container-vue">        
+        <button @click="increaseCounter">+1</button>
+        <button @click="decreaseCounter">-1</button>
     </div>
-    <button @click="increaseCounter">+1</button>
-    <button @click="decreaseCounter">-1</button>
+</div>
 </template>
 
 <script>
